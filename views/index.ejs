@@ -1,0 +1,40 @@
+<head>
+
+</head>
+<body>
+    <form action="salvarCliente" method="post">
+        <input type="text" name="nome">
+        <input type="text" name="telefone">
+        <button  class="submit"></button>
+
+
+    </form>
+<form method="POST" action="pesquisar">
+    <input type="search" name="nome">
+    <button id="p" type="submit">pesquisar</button>
+</form>
+    <table>
+        <div>
+            <%  clientes.forEach((cliente)=>{ %>
+         
+            
+            <%= cliente.id %>
+            <br>
+            <tr><%= cliente.nome %> </tr>
+            <hr>
+    
+
+        </div>
+       
+       <tr>
+       
+            <br>
+        
+
+        <%   }) %>
+       </tr>
+   
+    
+    </table>
+    
+</body>
